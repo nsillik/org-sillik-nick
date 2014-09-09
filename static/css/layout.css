@@ -60,6 +60,10 @@ body {
 	text-decoration: underline;
 }
 
+#summary_of_experience p {
+	margin-bottom:5px;
+}
+
 .skill_sector > h3 {
 	line-height: 100%;
 	font-size: 12pt;
