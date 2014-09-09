@@ -21,6 +21,16 @@ body, h1, h2, h3, h4 {
 	font-family: serif;
 }
 
+body {
+  background: url('/static/img/white_wall_hash.png') top left;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),  (min-resolution: 192dpi) { 
+  body {
+    background: url('/static/img/white_wall_hash_@2X.png') top left;
+  }
+}
+
 .container > h1 {
 	font-size: 24pt;
 	font-variant: small-caps;
