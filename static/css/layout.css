@@ -22,28 +22,32 @@ body, h1, h2, h3, h4 {
 }
 
 body {
-  background: url('/static/img/white_wall_hash.png') top left;
+  font-size: 16pt;
+  line-height: 100%;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),  (min-resolution: 192dpi) { 
-  body {
-    background: url('/static/img/white_wall_hash_@2X.png') top left;
-  }
+.container.head h2 {
+  text-align: left;
+  font-variant: normal;
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
 }
 
 .container > h1 {
-	font-size: 24pt;
+	font-size: 32pt;
 	font-variant: small-caps;
 	font-weight: bold;
 	margin-top: 25px;
-	text-align: right;
+	margin-bottom: 0px;
+	line-height: 100%;
+	text-align: left;
 }
 
 .container > h2 {
 	font-variant: small-caps;
-	font-size: 14pt;
+	font-size: 18pt;
 	text-align: right;
-	line-height: 14pt;
 	line-height: 100%;
 	color: #666;
 }
@@ -66,7 +70,7 @@ body {
 
 .skill_sector > h3 {
 	line-height: 100%;
-	font-size: 12pt;
+	font-size: 16pt;
 	font-weight: bold;
 	display: inline;
 }
@@ -81,7 +85,7 @@ body {
 
 .job > h3, #education h3 {
 	line-height: 100%;
-	font-size: 14pt;
+	font-size: 16pt;
 	font-weight: bold;
 	display: inline
 }
@@ -97,6 +101,11 @@ body {
 	display: inline-block;
 	text-align: right;
 	font-weight: bold;
+        font-size: 12pt;
+}
+
+#publications li {
+  line-height: 100%;
 }
 
 .job > ul.dates > li {
@@ -106,12 +115,15 @@ body {
 .job ul.acheivements > li {
 	list-style-type: square;
 	list-style-position: inside;
+        line-height: 105%;
 }
 
 .job > h4 {
-	font-size: 12pt;
+	font-size: 14pt;
 	font-style: italic;
 	margin-top: 0px;
+        margin-bottom: 10px;
+        color: #555;
 }
 
 /* #Page Styles
