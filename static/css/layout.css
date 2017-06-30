@@ -22,8 +22,8 @@ body, h1, h2, h3, h4 {
 }
 
 body {
-  font-size: 16pt;
-  line-height: 100%;
+  font-size: 14pt;
+  line-height: 110%;
 }
 
 .container.head h2 {
@@ -35,7 +35,7 @@ body {
 }
 
 .container > h1 {
-	font-size: 32pt;
+	font-size: 30pt;
 	font-variant: small-caps;
 	font-weight: bold;
 	margin-top: 25px;
@@ -46,7 +46,7 @@ body {
 
 .container > h2 {
 	font-variant: small-caps;
-	font-size: 18pt;
+	font-size: 16pt;
 	text-align: right;
 	line-height: 100%;
 	color: #666;
@@ -85,7 +85,7 @@ body {
 
 .job > h3, #education h3 {
 	line-height: 100%;
-	font-size: 16pt;
+	font-size: 14pt;
 	font-weight: bold;
 	display: inline
 }
