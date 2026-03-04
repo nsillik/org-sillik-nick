@@ -22,7 +22,7 @@ body, h1, h2, h3, h4 {
 }
 
 body {
-  font-size: 14pt;
+  font-size: 16pt;
   line-height: 110%;
 }
 
@@ -30,7 +30,7 @@ body {
   text-align: left;
   font-variant: normal;
   font-style: italic;
-  font-size: 14px;
+  font-size: 16px;
   color: #555;
 }
 
@@ -46,7 +46,7 @@ body {
 
 .container > h2 {
 	font-variant: small-caps;
-	font-size: 16pt;
+	font-size: 18pt;
 	text-align: right;
 	line-height: 100%;
 	color: #666;
@@ -65,7 +65,7 @@ body {
 }
 
 #summary_of_experience p {
-	margin-bottom:5px;
+	margin-bottom: 5px;
 }
 
 .skill_sector > h3 {
@@ -85,14 +85,14 @@ body {
 
 .job > h3, #education h3 {
 	line-height: 100%;
-	font-size: 14pt;
+	font-size: 16pt;
 	font-weight: bold;
 	display: inline
 }
 
 .job > span.location, #education span.location {
 	margin-left: 10px;
-	font-size: 14pt;
+	font-size: 16pt;
 }
 
 .job > ul.dates {
@@ -101,7 +101,7 @@ body {
 	display: inline-block;
 	text-align: right;
 	font-weight: bold;
-        font-size: 12pt;
+  font-size: 14pt;
 }
 
 #publications li {
@@ -115,15 +115,15 @@ body {
 .job ul.acheivements > li {
 	list-style-type: square;
 	list-style-position: inside;
-        line-height: 105%;
+  line-height: 105%;
 }
 
 .job > h4 {
-	font-size: 14pt;
+	font-size: 16pt;
 	font-style: italic;
 	margin-top: 0px;
-        margin-bottom: 10px;
-        color: #555;
+  margin-bottom: 10px;
+  color: #555;
 }
 
 /* #Page Styles
