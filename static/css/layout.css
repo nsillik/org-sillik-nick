@@ -1,257 +1,297 @@
-/*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
+:root {
+  --accent: #f97316;
+  --accent-dark: #c2410c;
+  --text: #292524;
+  --text-muted: #78716c;
+  --border: #e7e5e4;
+  --rule: #d6d3d1;
+  --base: 16px;
+}
 
-/* Table of Content
-==================================================
-	#Site Styles
-	#Page Styles
-	#Media Queries
-	#Font-Face */
-
-/* #Site Styles
-================================================== */
-
-body,
-h1,
-h2,
-h3,
-h4 {
-    font-family: serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 16pt;
-    line-height: 110%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: var(--base);
+  line-height: 1.5;
+  color: var(--text);
+  background: #fafaf9;
 }
 
-.container.head h2 {
-    text-align: left;
-    font-variant: normal;
-    font-style: italic;
-    font-size: 16px;
-    color: #555;
+a {
+  color: var(--accent-dark);
+  text-decoration: none;
 }
 
-.container > h1 {
-    font-size: 30pt;
-    font-variant: small-caps;
-    font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: 0px;
-    line-height: 100%;
-    text-align: left;
+a:hover {
+  text-decoration: underline;
 }
 
-.container > h2 {
-    font-variant: small-caps;
-    font-size: 18pt;
-    text-align: right;
-    line-height: 100%;
-    color: #666;
+.resume {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2.5rem 3rem 2.25rem;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 0 20px;
-    max-width: 960px;
-    margin: 0 auto 25px;
+/* Header */
+
+.header {
+  margin-bottom: 1.5rem;
 }
 
-.container.head h1 {
-    grid-column: 1 / -1;
+.header h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.1;
 }
 
-#contact_information a {
-    text-decoration: none;
+.header .contact {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
 }
 
-#contact_information a:hover {
-    text-decoration: underline;
+.header .contact .separator {
+  margin: 0 0.375rem;
 }
 
-#summary_of_experience p {
-    margin-bottom: 5px;
+/* Sections */
+
+section {
+  margin-top: 1.125rem;
+  padding-top: 0.875rem;
+  border-top: 1px solid var(--border);
 }
 
-.skill_sector > h3 {
-    line-height: 100%;
-    font-size: 16pt;
-    font-weight: bold;
-    display: inline;
+section h2 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
 }
 
-.skill_sector > ul > li,
-.skill_sector > ul {
-    display: inline;
+/* Summary */
+
+.summary p {
+  font-size: 0.9375rem;
+  line-height: 1.45;
+  color: var(--text);
 }
+
+/* Skills */
+
+.skills p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text);
+  margin-bottom: 0.125rem;
+}
+
+.skills strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Jobs */
 
 .job {
-    position: relative;
+  margin-bottom: 1rem;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
-.job > h3,
-#education h3 {
-    line-height: 100%;
-    font-size: 16pt;
-    font-weight: bold;
-    display: inline;
+.job:last-child {
+  margin-bottom: 0;
 }
 
-.job > span.location,
-#education span.location {
-    margin-left: 10px;
-    font-size: 16pt;
+.job-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 0.625rem;
+  margin-bottom: 0.1875rem;
 }
 
-.job > ul.dates {
-    position: absolute;
-    right: 0px;
-    display: inline-block;
-    text-align: right;
-    font-weight: bold;
-    font-size: 14pt;
+.job-header h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
 }
 
-#publications li {
-    line-height: 100%;
+.job-header .title {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.2;
 }
 
-.job > ul.dates > li {
-    display: inline;
+.job-header .dates {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-left: auto;
+  white-space: nowrap;
+  line-height: 1.2;
 }
 
-.job ul.acheivements > li {
-    list-style-type: square;
-    list-style-position: inside;
-    break-inside: avoid;
-    line-height: 105%;
+.job-header .location {
+  display: none;
 }
 
-.job > h4 {
-    font-size: 16pt;
-    font-style: italic;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    color: #555;
+.job ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-/* #Page Styles
-================================================== */
-
-/* #Media Queries
-================================================== */
-
-/* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {
+.job ul li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--text);
+  padding-left: 1rem;
+  position: relative;
+  margin-bottom: 0.125rem;
 }
 
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+.job ul li::before {
+  content: "\2013";
+  position: absolute;
+  left: 1px;
+  color: var(--accent);
 }
 
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-    .container {
-        grid-template-columns: 1fr;
-        margin-top: 15px;
-    }
-
-    .container > h1,
-    .container h2 {
-        text-align: center;
-        padding-bottom: 15px;
-    }
-
-    .job > ul.dates {
-        position: static;
-        display: block;
-        text-align: left;
-        font-weight: bold;
-    }
-
-    .job > ul.dates > li {
-        display: inline;
-    }
-
-    .job span.location {
-        display: block;
-        text-align: left;
-        margin: 0;
-    }
+.job.brief {
+  margin-bottom: 0;
+  padding: 0.3125rem 0;
 }
 
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+.job.brief .job-header {
+  margin-bottom: 0;
 }
 
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {
+/* Education */
+
+.education p {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--text);
 }
 
-/* #Print
-================================================== */
+.education strong {
+  font-weight: 600;
+}
+
+/* Print */
 
 @media print {
-    body {
-        font-size: 12pt;
-    }
+  @page {
+    margin: 0.35in;
+  }
 
-    .container {
-        display: block;
-    }
+  body {
+    font-size: 10.5pt;
+    background: white;
+    color: #000;
+    line-height: 1.35;
+  }
 
-    .container > h2 {
-        text-align: left;
-        margin-bottom: 5px;
-    }
+  section h2 {
+    font-size: 0.8rem;
+  }
 
-    .job {
-        break-inside: avoid;
-    }
+  .resume {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    background: none;
+  }
 
-    .container > h1 {
-        font-size: 24pt;
-    }
+  .header {
+    margin-bottom: 0.75rem;
+  }
 
-    .container > h2 {
-        font-size: 14pt;
-    }
+  .header h1 {
+    line-height: 1.1;
+  }
 
-    .skill_sector > h3,
-    .job > h3,
-    #education h3,
-    .job > span.location,
-    #education span.location,
-    .job > h4 {
-        font-size: 12pt;
-    }
+  .header .contact {
+    margin-top: 0.125rem;
+  }
 
-    .job > ul.dates {
-        font-size: 11pt;
-    }
+  section {
+    margin-top: 0.5625rem;
+    padding-top: 0.4375rem;
+    border-top-width: 0.75pt;
+  }
+
+  section h2 {
+    font-size: 0.8rem;
+    letter-spacing: 1.2pt;
+    margin-bottom: 0.25rem;
+  }
+
+  .summary p {
+    line-height: 1.35;
+  }
+
+  .skills p {
+    line-height: 1.4;
+    margin-bottom: 0.0625rem;
+  }
+
+  .job {
+    margin-bottom: 0.5rem;
+  }
+
+  .job-header {
+    margin-bottom: 0.0625rem;
+  }
+
+  .job ul li {
+    line-height: 1.3;
+    margin-bottom: 0.0625rem;
+    padding-left: 0.75rem;
+  }
+
+  .education p {
+    line-height: 1.35;
+  }
+
+  .job.brief {
+    padding: 0.1875rem 0;
+  }
 }
 
-/* #Font-Face
-================================================== */
-/* 	This is the proper syntax for an @font-face file
-		Just create a "fonts" folder at the root,
-		copy your FontName into code below and remove
-		comment brackets */
+/* Mobile */
 
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
-*/
+@media (max-width: 768px) {
+  .resume {
+    margin: 0;
+    padding: 1.5rem 1.25rem;
+    box-shadow: none;
+  }
+
+  .job-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .job-header .dates {
+    margin-left: 0;
+  }
+
+  .job-header .location {
+    display: inline;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+  }
+}
